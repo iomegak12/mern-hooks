@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import CallbackTutorial from "./hooks/Callback/CallbackTutorial";
+import SignIn from "./hooks/Context/SignInComponent";
+import CustomHooksUseComponent from "./hooks/CustomHooksUse/CustomHooksUseComponent";
+import MemoizeTutorial from "./hooks/Memoize/MemoizeTutorial";
+import ReducerTutorial from "./hooks/Reducer/ReducerTutorial";
+import MainComponent from "./hooks/Reducerv2/Reducerv2Tutorial";
+import RefTutorial from "./hooks/Ref/RefTutorial";
+import NameProvider from "./hooks/State/NameProvider";
+import StateTutorial from "./hooks/State/StateTutorial";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CustomHooksUseComponent />
+    </>
   );
 }
 
